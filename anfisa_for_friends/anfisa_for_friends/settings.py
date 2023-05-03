@@ -32,6 +32,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'anfisa_for_friends.urls'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static_dev',
+    ]
+
 TEMPLATES_DIR = BASE_DIR / 'templates'
 
 TEMPLATES = [
@@ -89,8 +93,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static_dev',
-    ]
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

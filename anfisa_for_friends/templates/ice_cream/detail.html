@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
 !-- Блок title -->
 <!-- Название мороженого берется из ice_cream.title и приводится к нижнему регистру
@@ -19,7 +20,7 @@
       <img 
         class="img-fluid" 
         height="400" width="300"
-        src="img/image-holder.png"
+        src={% static 'img/image-holder.png' %}
         >      
     </div>
   </div>     
